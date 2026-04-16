@@ -48,7 +48,7 @@ A sophisticated 2D missile evasion game where **AI missiles learn in real-time u
 - Missile removed when fuel depletes
 - Visual feedback: Fuel bar transitions Green → Orange → Red
 
-### 🚀 **Anti-Orbiting Mechanism**
+### **Anti-Orbiting Mechanism**
 Prevents missiles from circling endlessly:
 1. **Closing velocity check**: Remove if moving away (`dot(v, direction) < -0.1`)
 2. **Minimum speed clamp**: `max(speed, 1.5)` prevents drift
@@ -378,4 +378,4 @@ This game demonstrates:
 **Numerical stability** (matrix operations)
 **Human-machine interaction** (learning around player behavior)
 
-**Enjoy watching missiles learn to hunt!** 🎮
+**Enjoy watching missiles learn to hunt!**
