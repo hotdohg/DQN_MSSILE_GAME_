@@ -370,6 +370,10 @@ GAME OVER - Player collides with missile
 
 ## Contact & Notes
 
+1.py and 2.py files are not inlcude DQN 
+also it's not work.. 
+
+
 This game demonstrates:
 **Real-time reinforcement learning** (online DQN)
 **State estimation under uncertainty** (EKF)
