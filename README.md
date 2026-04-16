@@ -10,14 +10,14 @@ A sophisticated 2D missile evasion game where **AI missiles learn in real-time u
 
 ## Key Features
 
-### 🧠 **AI Learning System (DQN)**
+### **AI Learning System (DQN)**
 - **Real-time online training**: Missiles learn during gameplay with every frame
 - **Experience replay buffer**: Stores up to 10,000 transitions for training stability
 - **Target network**: Separate network updated every 1,000 training steps to stabilize learning
 - **Epsilon-greedy exploration**: Decays from 1.0 → 0.05, forcing missiles to exploit learned behaviors over time
 - **On-policy learning**: Rewards based on closing distance, survival, and hitting the player
 
-### 🛩️ **Hybrid Missile Guidance**
+### **Hybrid Missile Guidance**
 1. **Physics Layer** (Baseline):
    - True intercept guidance using pursuit-evasion geometry
    - Solves quadratic equation: `||target + vel*t - missile|| = speed*t`
@@ -41,7 +41,7 @@ A sophisticated 2D missile evasion game where **AI missiles learn in real-time u
      - EKF estimation error
    - **Modulates** heading, turn rate, and prediction time
 
-### ⛽ **Realistic Fuel System**
+### **Realistic Fuel System**
 - Maximum fuel: 12 seconds per missile
 - Burn phase (first 6s): Full thrust (1.0× multiplier)
 - Post-burn decay: `thrust = (fuel / max_fuel) ^ 1.0`
@@ -371,11 +371,11 @@ GAME OVER - Player collides with missile
 ## Contact & Notes
 
 This game demonstrates:
-✅ **Real-time reinforcement learning** (online DQN)
-✅ **State estimation under uncertainty** (EKF)
-✅ **Hybrid AI systems** (physics + learning)
-✅ **Pursuit-evasion dynamics** (game theory)
-✅ **Numerical stability** (matrix operations)
-✅ **Human-machine interaction** (learning around player behavior)
+**Real-time reinforcement learning** (online DQN)
+**State estimation under uncertainty** (EKF)
+**Hybrid AI systems** (physics + learning)
+**Pursuit-evasion dynamics** (game theory)
+**Numerical stability** (matrix operations)
+**Human-machine interaction** (learning around player behavior)
 
 **Enjoy watching missiles learn to hunt!** 🎮
